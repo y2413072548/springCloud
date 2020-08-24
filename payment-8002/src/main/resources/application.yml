@@ -1,0 +1,16 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cloud-payment
+  cloud:
+    zookeeper:
+      connect-string: 120.26.163.69:2181
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.26.163.69:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.yy.springcloud.pojo
